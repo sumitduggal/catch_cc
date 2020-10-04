@@ -46,7 +46,10 @@ function App() {
       {/* Header */}
       <Header />
       {/* Products List */}
-      <ProductList isLoadingData={isLoadingProducts} />
+      <ProductList
+        isLoadingData={isLoadingProducts}
+        productItems={productItems}
+      />
     </div>
   );
 }
