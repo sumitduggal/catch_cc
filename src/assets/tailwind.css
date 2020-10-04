@@ -1,3 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300;500;700&display=swap");

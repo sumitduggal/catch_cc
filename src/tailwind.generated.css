@@ -10218,6 +10218,10 @@ video {
   font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+.font-dosis {
+  font-family: Dosis, sans-serif;
+}
+
 .font-hairline {
   font-weight: 100;
 }
@@ -18932,6 +18936,10 @@ video {
 .animate-bounce {
   animation: bounce 1s infinite;
 }
+
+/* Google fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300;500;700&display=swap");
 
 @media (min-width: 640px) {
   .sm\:container {
@@ -28573,6 +28581,10 @@ video {
 
   .sm\:font-mono {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .sm\:font-dosis {
+    font-family: Dosis, sans-serif;
   }
 
   .sm\:font-hairline {
@@ -46902,6 +46914,10 @@ video {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .md\:font-dosis {
+    font-family: Dosis, sans-serif;
+  }
+
   .md\:font-hairline {
     font-weight: 100;
   }
@@ -65229,6 +65245,10 @@ video {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .lg\:font-dosis {
+    font-family: Dosis, sans-serif;
+  }
+
   .lg\:font-hairline {
     font-weight: 100;
   }
@@ -83554,6 +83574,10 @@ video {
 
   .xl\:font-mono {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .xl\:font-dosis {
+    font-family: Dosis, sans-serif;
   }
 
   .xl\:font-hairline {

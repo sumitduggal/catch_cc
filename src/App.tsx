@@ -3,10 +3,8 @@ import React from "react";
 function App() {
   return (
     <div>
-      <header>
-        {/* Header */}
-        {/* Products List */}
-      </header>
+      {/* Header */}
+      {/* Products List */}
     </div>
   );
 }
