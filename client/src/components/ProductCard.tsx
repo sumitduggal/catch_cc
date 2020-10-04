@@ -3,14 +3,18 @@ import React from "react";
 import { ProductItem } from "../AppProps";
 import { formatProductsPrice } from "../formatters";
 
-export const ProductCard = ({
-  id,
-  name,
-  salePrice,
-  retailPrice,
-  imageUrl,
-  quantityAvailable,
-}: ProductItem) => {
+type ProductCardProps = {
+  productItem: ProductItem;
+};
+
+export const ProductCard = ({ productItem }: ProductCardProps) => {
+  const {
+    name,
+    salePrice,
+    retailPrice,
+    imageUrl,
+    quantityAvailable,
+  } = productItem;
   const isRetailPriceAvailable = retailPrice > 0;
   return (
     <div className="max-w-sm rounded overflow-hidden shadow-lg flex flex-col">
