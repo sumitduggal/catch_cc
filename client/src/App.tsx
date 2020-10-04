@@ -5,6 +5,7 @@ import { ProductItem, ProductMeta } from "./AppProps";
 
 import { Header } from "./pageComponents/Header";
 import { ProductList } from "./pageComponents/ProductList";
+import { ProductListHeader } from "./pageComponents/ProductListHeader";
 
 function App() {
   const [isLoadingProducts, setIsLoadingProducts] = useState(false);
@@ -17,7 +18,7 @@ function App() {
 
       const response = await getProductsList();
 
-      // Note: responseok === true, means the request
+      // Note: response.ok === true, means the request
       // returned with 200 status
       if (response.ok) {
         if (response.data) {
@@ -38,13 +39,11 @@ function App() {
     requestProductsList();
   }, []);
 
-  console.log("productMeta", productMeta);
-  console.log("productItems", productItems);
-
   return (
     <div className="flex flex-col w-screen h-screen">
       {/* Header */}
       <Header />
+      {productMeta && <ProductListHeader {...{ productMeta }} />}
       {/* Products List */}
       <ProductList
         isLoadingData={isLoadingProducts}
