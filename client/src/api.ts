@@ -1,9 +1,14 @@
+import { ProductMeta, ProductItem } from "./AppProps";
+
 const REQUEST_HOST = "http://localhost:4000/";
 const REQUEST_ENDPOINT = "api/product-list";
 
 export type ProductsResponseType = {
   ok: boolean;
-  data?: any;
+  data?: {
+    metadata: ProductMeta;
+    results: ProductItem[];
+  };
   error?: Error;
 };
 
