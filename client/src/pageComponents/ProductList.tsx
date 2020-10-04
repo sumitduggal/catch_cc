@@ -14,8 +14,7 @@ export const ProductList: React.FC<ProductListProps> = ({
   productItems,
 }) => {
   const Products = () => (
-    <div>
-      {productItems && productItems.length} items listed
+    <div className="grid grid-cols-1 sm:grid-cols-2 place-items-center sm:place-items-stretch md:grid-cols-3 gap-8 my-10">
       {productItems &&
         productItems.map(
           ({
