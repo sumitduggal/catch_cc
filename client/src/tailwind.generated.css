@@ -18950,6 +18950,7 @@ video {
 @media (min-width: 768px) {
   .page-layout {
     flex-direction: row;
+    justify-content: space-between;
   }
 }
 

@@ -10,6 +10,6 @@
 }
 @screen md {
   .page-layout {
-    @apply flex-row;
+    @apply flex-row justify-between;
   }
 }
