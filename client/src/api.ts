@@ -1,5 +1,5 @@
-const REQUEST_FORM_ENDPOINT =
-  "http://catch-code-challenge.s3-website-ap-southeast-2.amazonaws.com/challenge-3/response.json";
+const REQUEST_HOST = "http://localhost:4000/";
+const REQUEST_ENDPOINT = "api/product-list";
 
 export type ProductsResponseType = {
   ok: boolean;
@@ -12,11 +12,12 @@ export const getProductsList = async (): Promise<ProductsResponseType> => {
     ok: false,
   };
   try {
-    const response = await fetch(REQUEST_FORM_ENDPOINT);
+    const response = await fetch(`${REQUEST_HOST}${REQUEST_ENDPOINT}`);
 
     const { ok, status } = response;
     if (ok) {
       const data = await response.json();
+
       result = {
         ok: true,
         data,

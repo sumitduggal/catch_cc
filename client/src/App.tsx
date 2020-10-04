@@ -5,7 +5,6 @@ import { Header } from "./pageComponents/Header";
 function App() {
   useEffect(() => {
     const requestProductsList = async () => {
-      //  getting CORS
       const response = await getProductsList();
       console.log(response);
     };
