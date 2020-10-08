@@ -19,7 +19,7 @@ export const getProductsList = async (): Promise<ProductsResponseType> => {
   try {
     const response = await fetch(`${REQUEST_HOST}${REQUEST_ENDPOINT}`);
 
-    const { ok, status } = response;
+    const { ok } = response;
     if (ok) {
       const data = await response.json();
 
