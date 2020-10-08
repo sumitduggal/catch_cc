@@ -2,7 +2,11 @@ import React, { useEffect, useState } from "react";
 
 import { getProductsList } from "./api";
 import { ProductItem, ProductMeta } from "./AppProps";
-import { PriceSortOption, PRICE_SORT_OPTIONS, sortPriceList } from "./helpers";
+import {
+  PriceSortOption,
+  PRICE_SORT_OPTIONS,
+  sortPriceList,
+} from "./utils/helpers";
 
 import { Header } from "./pageComponents/Header";
 import { ProductList } from "./pageComponents/ProductList";

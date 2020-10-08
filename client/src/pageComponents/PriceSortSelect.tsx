@@ -2,7 +2,7 @@ import React from "react";
 
 import { Select, SelectOption } from "../components/Select";
 import { SVGArrow } from "../components/SVGArrow";
-import { PriceSortOption, PRICE_SORT_OPTIONS } from "../helpers";
+import { PriceSortOption, PRICE_SORT_OPTIONS } from "../utils/helpers";
 
 export type PriceSortSelectProps = {
   sortOption: PriceSortOption;

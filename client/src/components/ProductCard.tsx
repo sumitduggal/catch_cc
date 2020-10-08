@@ -1,7 +1,7 @@
 import React from "react";
 
 import { ProductItem } from "../AppProps";
-import { formatProductsPrice } from "../formatters";
+import { formatProductsPrice } from "../utils/formatters";
 
 type ProductCardProps = {
   productItem: ProductItem;

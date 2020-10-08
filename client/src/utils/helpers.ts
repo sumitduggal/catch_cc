@@ -1,4 +1,4 @@
-import { ProductItem } from "./AppProps";
+import { ProductItem } from "../AppProps";
 export type PriceSortOption = {
   value: string;
   text: string;
