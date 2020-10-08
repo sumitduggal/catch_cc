@@ -15,9 +15,9 @@ export const PRICE_SORT_OPTIONS: PriceSortOption[] = [
   },
 ];
 
-const sortByLowest = (a: ProductItem, b: ProductItem) =>
+export const sortByLowestPrice = (a: ProductItem, b: ProductItem) =>
   a.salePrice - b.salePrice;
-const sortByHighest = (a: ProductItem, b: ProductItem) =>
+export const sortByHighestPrice = (a: ProductItem, b: ProductItem) =>
   b.salePrice - a.salePrice;
 
 export const sortPriceList = (
@@ -28,11 +28,11 @@ export const sortPriceList = (
 
   switch (sortOption.value) {
     case PRICE_SORT_OPTIONS[0].value:
-      sortMethod = sortByHighest;
+      sortMethod = sortByHighestPrice;
       break;
     case PRICE_SORT_OPTIONS[1].value:
     default:
-      sortMethod = sortByLowest;
+      sortMethod = sortByLowestPrice;
       break;
   }
 
