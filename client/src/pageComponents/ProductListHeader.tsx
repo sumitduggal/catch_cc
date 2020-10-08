@@ -22,5 +22,3 @@ export const ProductListHeader = ({ productMeta }: ProductListHeaderProps) => {
     </div>
   );
 };
-
-// productMeta;

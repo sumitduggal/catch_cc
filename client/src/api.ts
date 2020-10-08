@@ -28,14 +28,15 @@ export const getProductsList = async (): Promise<ProductsResponseType> => {
         data,
       };
     } else {
-      if (status >= 400 && status < 500) {
-        const error = await response.json();
-
-        result = {
-          ok: false,
-          error,
-        };
-      }
+      // Note: assuming the error message structure will be
+      /*
+        {
+          errorMessage: "Some error message"
+        }
+      **/
+      const { errorMessage } = await response.json();
+      const error = new Error(errorMessage);
+      throw error;
     }
   } catch (error) {
     result = {

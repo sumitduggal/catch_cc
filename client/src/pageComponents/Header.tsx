@@ -5,7 +5,7 @@ import { PriceSortSelect, PriceSortSelectProps } from "./PriceSortSelect";
 
 export const Header = ({ sortOption, setSortOption }: PriceSortSelectProps) => {
   return (
-    <header className="container mx-auto page-layout">
+    <header className="container mx-auto page-layout bg-white">
       <div className="w-full md:w-auto border-b md:border-none p-5 sm:px-0 md:py-10 flex justify-center items-center">
         <Branding />
       </div>
