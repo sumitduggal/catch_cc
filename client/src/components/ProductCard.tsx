@@ -25,7 +25,7 @@ export const ProductCard = ({ productItem }: ProductCardProps) => {
             className="absolute uppercase right-0 bg-gray-900 px-3 py-1 text-sm text-white font-semibold mr-2 mb-2"
             style={{ bottom: "1rem" }}
           >
-            sold out
+            SOLD OUT
           </span>
         )}
       </div>
