@@ -21,7 +21,7 @@ export const PriceSortSelect = ({
   };
 
   return (
-    <div className="inline-block relative w-36">
+    <div data-testid="price-sort-by"  className="inline-block relative w-36">
       <Select id="price-sort" label="Sort Items by" value={sortOption.value} onChange={handleChange}>
         {PRICE_SORT_OPTIONS.map((option) => (
           <SelectOption key={option.value} value={option.value}>
