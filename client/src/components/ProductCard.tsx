@@ -22,7 +22,7 @@ export const ProductCard = ({ productItem }: ProductCardProps) => {
         <img className="w-full" src={imageUrl} alt={name} />
         {quantityAvailable === 0 && (
           <span
-            className="absolute uppercase right-0 bg-gray-600 px-3 py-1 text-sm text-white font-semibold mr-2 mb-2"
+            className="absolute uppercase right-0 bg-gray-900 px-3 py-1 text-sm text-white font-semibold mr-2 mb-2"
             style={{ bottom: "1rem" }}
           >
             sold out

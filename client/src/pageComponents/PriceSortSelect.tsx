@@ -1,7 +1,6 @@
 import React from "react";
 
 import { Select, SelectOption } from "../components/Select";
-import { SVGArrow } from "../components/SVGArrow";
 import { PriceSortOption, PRICE_SORT_OPTIONS } from "../utils/helpers";
 
 export type PriceSortSelectProps = {
@@ -23,14 +22,13 @@ export const PriceSortSelect = ({
 
   return (
     <div className="inline-block relative w-36">
-      <Select value={sortOption.value} onChange={handleChange}>
+      <Select id="price-sort" label="Sort Items by" value={sortOption.value} onChange={handleChange}>
         {PRICE_SORT_OPTIONS.map((option) => (
           <SelectOption key={option.value} value={option.value}>
             {option.text}
           </SelectOption>
         ))}
       </Select>
-      <SVGArrow />
     </div>
   );
 };
