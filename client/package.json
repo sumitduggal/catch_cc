@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "run-p watch:tailwind start:app",
-    "start:app": "react-scripts start",
+    "prestart": "yarn build:tailwind",
+    "start": "react-scripts start",
     "watch:tailwind": "postcss -w src/assets/tailwind.css -o src/tailwind.generated.css",
     "prebuild": "npm run build:tailwind",
     "build": "react-scripts build",
