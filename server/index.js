@@ -1,7 +1,7 @@
 const express = require("express");
 const superagent = require("superagent");
 
-// CORS middleware is required to enable pur client
+// CORS middleware is required to enable our client
 // to access api-endpoint
 const cors = require("cors");
 
@@ -13,7 +13,6 @@ const PRODUCT_API_ENDPOINT =
 
 app.get("/api/product-list", async function (req, res) {
   try {
-    console.log("received request");
     const response = await superagent.get(PRODUCT_API_ENDPOINT);
     res.status(200).send(response.text);
   } catch (error) {
